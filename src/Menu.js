@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Search from "./Search";
+import PanelAdd from "./PanelAdd";
 
 export default class Menu extends Component {
   render() {
@@ -13,9 +14,12 @@ export default class Menu extends Component {
           </div>
 
           <div className="actions">
-            <button className="button btn-blu">+ Añadir Nuevo Libro</button>
+            <button onClick={this.add} className="button btn-blu">
+              + Añadir Nuevo Libro
+            </button>
           </div>
         </div>
+        <PanelAdd />
       </div>
     );
   }
